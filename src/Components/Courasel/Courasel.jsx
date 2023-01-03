@@ -1,17 +1,20 @@
+// eslint-disable-next-line
 import React, { useState, useEffect } from "react";
 import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 export const CouraselItem = ({ children }) => {
   return (
-    <div className="bg-white px-5 py-10 w-full inline-flex rounded" 
-    style={{transform:"scale(1)"}}>
+    <div
+      className="w-full inline-flex rounded h-96 md:h-[35vw] relative"
+      style={{ transform: "scale(1)" }}
+    >
       {children}
     </div>
   );
 };
 
 const Courasel = ({ children }) => {
-  const [currentIndex, setIndex] = useState(0);
+  const [currentIndex, setIndex] = useState(1);
 
   const setCurrentIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -24,24 +27,24 @@ const Courasel = ({ children }) => {
   // console.log(currentIndex)
 
   const [paused, setPaused] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!paused) {
-        setCurrentIndex(currentIndex + 1);
-      }
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!paused) {
+  //       setCurrentIndex(currentIndex + 1);
+  //     }
+  //   }, 5000);
 
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  });
+  //   return () => {
+  //     if (interval) {
+  //       clearInterval(interval);
+  //     }
+  //   };
+  // });
 
   const reactChildren = React.Children.toArray(children);
 
   return (
-    <div className="md:px-10">
+    <div>
       <div className="flex flex-row justify-end space-x-3 mb-2">
         <div
           className="bg-navColor py-2 px-3 rounded cursor-pointer"
@@ -59,11 +62,16 @@ const Courasel = ({ children }) => {
       <div
         onMouseEnter={() => setPaused(!paused)}
         onMouseLeave={() => setPaused(!paused)}
-        className={`inner whitespace-nowrap  md:space-x-2 duration-1000`}
+        className={`inner whitespace-nowrap  md:space-x-2 duration-700`}
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
-           return React.cloneElement(child, index === currentIndex ? {transform:"scale(0.5)"} : {transform:"scale(1)"});
+          return React.cloneElement(
+            child,
+            index === currentIndex
+              ? { transform: "scale(0.5)" }
+              : { transform: "scale(1)" }
+          );
         })}
       </div>
       <div className="flex flex-row items-center justify-center space-x-4 mt-5">

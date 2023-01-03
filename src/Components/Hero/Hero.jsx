@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import image from "../../Assets/image.png";
+import students from '../../Assets/image5.jpeg';
+import employer from '../../Assets/internship.jpg'
+import  { MdOutlineArrowRightAlt } from 'react-icons/md'
+
 import Nav from "./Nav";
 
 const Hero = () => {
@@ -11,34 +13,26 @@ const Hero = () => {
       <Nav />
 
       {/* hero */}
-      <div className="mt-10 h-full pb-10 xl:px-0 lg:px-5 md:mt-20">
-        <div className="flex flex-col h-full mx-auto md:flex-row md:space-x-10 md:max-w-screen-xl">
-          <div className="flex flex-col px-2 md:px-0 md:w-1/2">
-            <h2 className="text-white text-4xl font-bold capitalize md:text-sz md:leading-1">
-              We help you manage your rentals with ease...
-            </h2>
-            <p className="text-white text-base my-4 lg:text-base xl:text-xl">
-              For many property managers, handling their routine tasks consists
-              of a large number of juggling tasks around. Manually performing
-              such business operations as tracking rent payments and managing
-              maintenance requests is highly time-consuming and often
-              overwhelming, and these processes form only a small part of what
-              property managers face on a daily basis. Luckily, we bring you an
-              easy solution.
-            </p>
-            <Link
-              to="/pricing"
-              className="bg-white  border w-max rounded-3xl py-2 px-6 text-base text-navColor font-bold hover:bg-transparent hover:text-white hover:border duration-500"
-            >
-              Get started
-            </Link>
+      <div className="flex flex-col space-y-10 mt-10 px-2 h-full pb-10 w-full max-w-screen-xl mx-auto md:gap-20 xl:px-0 lg:px-5 md:mt-20 md:flex-row md:space-y-0">
+        <div className="flex flex-col md:w-1/2">
+          <img src={students} alt="" className="h-46 w-full object-cover md:h-96"/>
+          <div className="flex flex-col mt-5 pb-2">
+            <h2 className="text-xl text-white mb-2">FOR STUDENTS</h2>
+            <p className="text-white text-xl md:text-2xl">Are you currently studying and want to do a work placement abroad?</p>
           </div>
-          <div className="hidden h-full mt-10 rounded-t-full overflow-hidden md:w-1/2 md:mt-0 md:flex">
-            <img
-              src={image}
-              alt=""
-              className="h-[20rem] w-full object-cover lg:h-[40vw] xl:h-[40rem] md:h-[45vw]"
-            />
+          <div className="flex flex-col border-t pt-2">
+            <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Internship abroad</a>
+            <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Current Internship Offers</a>
+          </div>
+        </div>
+        <div className="flex flex-col md:w-1/2">
+          <img src={employer} alt="" className="h-46 w-full object-cover md:h-96"/>
+          <div className="flex flex-col mt-5 pb-2">
+            <h2 className="text-xl text-white mb-2">FOR EMPLOYERS</h2>
+            <p className="text-white text-xl md:text-2xl">Are you running a business, and would you like to employ an international intern?</p>
+          </div>
+          <div className="flex flex-col border-t pt-2">
+          <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Offer an internship</a>
           </div>
         </div>
       </div>

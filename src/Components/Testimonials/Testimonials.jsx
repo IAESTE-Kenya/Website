@@ -1,110 +1,75 @@
 import React from "react";
-import { ImQuotesLeft } from "react-icons/im";
 import Courasel from "../Courasel/Courasel";
 import { CouraselItem } from "../Courasel/Courasel";
-import person from "../../Assets/Testimonials/person.jpeg";
-import person2 from "../../Assets/Testimonials/person2.jpeg";
-import person3 from "../../Assets/Testimonials/person3.jpg";
-import person4 from "../../Assets/Testimonials/person4.jpeg"
+import plane from "../../Assets/plane2.png";
+import students from "../../Assets/students.jpeg";
+import image3 from "../../Assets/image3.jpg";
 
 const Testimonials = () => {
   return (
-    <section className="md:max-w-screen-xl mx-auto my-10 px-2">
+    <section className="testimonials overflow-hidden md:max-w-screen-xl mx-auto my-10">
       <div>
-        <h3 className="text-4xl font-semibold text-center capitalize md:text-szmd">
-          Hear from our <span className="text-navColor">customers</span>
-        </h3>
-        <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[60%] lg:w-[75%] xl:w-[60%]">
+        <div className="w-full md:mx-auto md:w-[60vw]">
           <Courasel>
             <CouraselItem>
-              <div className="flex flex-col items-center">
-                <div className="flex h-20 w-20 p-1 rounded-full bg-imgColor overflow-hidded">
-                  <img
-                    src={person}
-                    alt=""
-                    className="h-full w-full rounded-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col items-center">
-                  <p className="text-lg font-semibold text-navColor">
-                    Abdul Ali
+              <img src={students} alt="" className="h-full w-full object-cover" />
+              <div className="absolute bg-imgColor w-full h-full">
+                <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">
+                  <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
+                    Paid Professional Experience
+                  </h2>
+                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                    An IAESTE internship will be a highlight on your CV whenever
+                    you apply for a job. Our paid internships provide real work
+                    experience directly connected to your studies and are also
+                    flexible in terms of how long they are and when they take
+                    place.
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
-                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Fugit dolorum hic optio enim ullam corrupti ex ut esse sint
-                    quisquam. Ipsum beatae non rerum recusandae nulla dolorum
-                    modi inventore debitis. Lorem, ipsum. Lorem, ipsum.
-                  </p>
+                  <button className="w-max bg-buttonColor text-white font-bold  py-3 px-5 rounded">
+                    APPLY NOW
+                  </button>
                 </div>
               </div>
             </CouraselItem>
             <CouraselItem>
-              <div className="flex flex-col items-center">
-                <div className="flex h-20 w-20 p-1 rounded-full bg-imgColor overflow-hidded">
-                  <img
-                    src={person2}
-                    alt=""
-                    className="h-full w-full rounded-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col items-center">
-                  <p className="text-lg font-semibold text-navColor">
-                    Richard Tait
+              <img src={plane} alt="" className="h-full w-full object-cover" />
+              <div className="absolute bg-imgColor w-full h-full">
+                <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">
+                  <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
+                    Experience And Discover With IAESTE
+                  </h2>
+                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                    IAESTE offer both remote and onsite internship, the good
+                    news is that both internships are paid. You will et a chance
+                    to connect with other people, work in a foreign country as a
+                    Kenyan student, without having to struggle with visa. Search
+                    currently available internships and find a life changing
+                    experience
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
-                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tempore explicabo recusandae corporis laborum perspiciatis
-                    iste? Vel quisquam nemo voluptatum quae! Reiciendis
-                    perferendis sit soluta, neque aliquid nobis. Lorem, ipsum.
-                  </p>
+                  <button className="w-max bg-buttonColor text-white font-bold  py-3 px-5 rounded">
+                    FIND AN INTERNSHIP
+                  </button>
                 </div>
               </div>
             </CouraselItem>
             <CouraselItem>
-              <div className="flex flex-col items-center">
-                <div className="flex h-20 w-20 p-1 rounded-full bg-imgColor overflow-hidded">
-                  <img
-                    src={person3}
-                    alt=""
-                    className="h-full w-full rounded-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col items-center">
-                  <p className="text-lg font-semibold text-navColor">
-                    Ruth Garcia
+              <img src={image3} alt="" className="h-full w-full object-cover" />
+              <div className="absolute bg-imgColor w-full h-full">
+                <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">
+                  <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
+                    Skilled Interns
+                  </h2>
+                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                    Trainees with excellent communication skills (English is the
+                    working language for the participation in the exchange
+                    programme but other languages can be requested). IAESTE
+                    students bring an international dimension to the workplace
+                    as well as fresh ideas and different, often innovative
+                    perspectives.
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
-                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Esse eum impedit facere sequi amet quaerat nulla natus nobis
-                    odit accusantium error, quos ex repellat ut vero
-                    exercitationem, adipisci quod autem? Lorem, ipsum.
-                  </p>
-                </div>
-              </div>
-            </CouraselItem>
-            <CouraselItem>
-              <div className="flex flex-col items-center">
-                <div className="flex h-20 w-20 p-1 rounded-full bg-imgColor overflow-hidded">
-                  <img
-                    src={person4}
-                    alt=""
-                    className="h-full w-full rounded-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col items-center">
-                  <p className="text-lg font-semibold text-navColor">
-                    Yusuf Joseph
-                  </p>
-                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
-                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Esse eum impedit facere sequi amet quaerat nulla natus nobis
-                    odit accusantium error, quos ex repellat ut vero
-                    exercitationem, adipisci quod autem? Lorem, ipsum.
-                  </p>
+                  <button className="w-max bg-buttonColor text-white font-bold  py-3 px-5 rounded">
+                    OFFER AN INTERNSHIP
+                  </button>
                 </div>
               </div>
             </CouraselItem>

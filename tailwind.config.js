@@ -20,8 +20,8 @@ module.exports = {
         szmd: '3vw'
       },
       colors: {
-        navColor: '#244886',
-        stickyNav: 'rgba(36,72,134, 1)',
+        navColor: '#0b3d59',
+        stickyNav: '#0b3d59',
         borderColor: '#686a10',
         whiteBg: "rgba(255, 255, 255, 0.7)",
         textColor: "#343d48",
@@ -29,7 +29,9 @@ module.exports = {
         spanColor: "#244886",
         imgColor: 'rgba(13,110,253,0.1)',
         hoverColor: 'rgba(36,72,134,0.2)',
+        imgColor: 'rgba(36,72,134,0.8)',
         footerColor: '#eeee',
+        buttonColor: '#1a84d7',
       },
     },
   },

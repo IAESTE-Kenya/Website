@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../Assets/image.png";
 import Nav from "../Hero/Nav";
 
 const Terms = () => {
@@ -12,13 +11,6 @@ const Terms = () => {
 
       {/* container */}
       <div className="flex flex-col max-w-screen-xl mx-auto px-2 md:px-0">
-        <div className="mx-auto w-full">
-          <img
-            src={image}
-            alt=""
-            className="h-64 w-full object-cover md:h-96"
-          />
-        </div>
         <div className="policy mb-5 mx-auto bg-white md:px-5 md:py-10">
           <h1 className="text-2xl text-navColor font-bold mb-5 border-b py-2 md:mb-10 md:text-4xl">
             Terms and Conditions
@@ -27,7 +19,7 @@ const Terms = () => {
           <p>
             These Website Standard Terms and Conditions written on this webpage
             shall manage your use of our website,
-            <a href="https://rentalsuccess.netlify.app/"> Renters Success</a>
+            <a href="https://iaestekenya.org/">IAESTE Kenya</a>
           </p>
           <p>
             These Terms will be applied fully and affect to your use of this

@@ -22,53 +22,44 @@ const Nav = () => {
 
   return (
     <nav
-      className={`py-0 md:px-2 z-50 ${
+      className={`py-0 md:px-2 md:py-4 z-50 ${
         sticky === "sticky" ? `fixed w-full top-0 bg-stickyNav` : ""
       }`}
     >
       <div className="relative flex flex-row justify-between items-center mx-auto max-w-full md:max-w-screen-xl">
         <Link
           to="/"
-          className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50"
+          className="flex flex-row items-center z-50"
         >
-          <img src={logo} alt="" className="h-full" />
-          <p className="text-white text-base font-semibold italic md:text-lg">
-            Renters Success
+          <img src={logo} alt="" className="h-16 w-16" />
+          <p className="text-white text-base font-bold md:text-2xl">
+            IAESTE <span className="block -mt-1 text-center md:text-xl">Kenya</span>
           </p>
         </Link>
         <div
-          className={`flex flex-col items-center absolute ${
+          className={`flex flex-col items-start absolute px-3 pt-3 ${
             active ? `top-[4rem]` : `top-[-450%]`
-          } duration-500 w-full pb-4 bg-navColor space-y-3 md:flex-row md:pb-0 md:bg-none md:space-x-5 md:space-y-0 md:relative md:w-max md:top-0`}
+          } duration-500 w-full pb-4 bg-navColor space-y-3 md:flex-row md:pb-0 md:bg-none md:space-x-16 md:space-y-0 md:relative md:w-max md:top-0 md:pt-0`}
         >
-          <a href="#home" className="text-white text-lg font-bold">
-            Home
+          <a href="#home" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+            About IAESTE
           </a>
-          <a href="#about" className="text-white text-lg font-bold">
-            About
+          <a href="#about" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+            Students
           </a>
-          <a href="#contacts" className="text-white text-lg font-bold">
-            Contact
+          <a href="#contacts" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+            Employers
           </a>
-          <Link to="/pricing" className="text-white text-lg font-bold">
-            Pricing
-          </Link>
-          <a href="#pricing" className="text-white text-lg font-bold">
-            Testimonials
+          <a href="#contact" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+            Contact Us
           </a>
-          <Link
-            to="/pricing"
-            className="flex bg-white w-max rounded-3xl py-1 px-6 text-base text-navColor font-bold hover:bg-navColor hover:text-white hover:border duration-700 md:hidden"
-          >
-            Get started
-          </Link>
         </div>
         <div className="hidden md:flex">
           <Link
             to="/pricing"
-            className="bg-white rounded-3xl py-2 px-6 text-base text-navColor font-bold hover:bg-navColor hover:text-white hover:border duration-700"
+            className="bg-buttonColor rounded py-3 px-6 text-base text-white font-bold hover:opacity-[0.7] duration-700"
           >
-            Get started
+            APPLY NOW
           </Link>
         </div>
         <div
