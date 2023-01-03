@@ -22,7 +22,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`py-0 md:px-2 md:py-4 z-50 ${
+      className={`py-2 md:px-2 md:py-4 z-50 ${
         sticky === "sticky" ? `fixed w-full top-0 bg-stickyNav` : ""
       }`}
     >
