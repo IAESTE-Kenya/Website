@@ -5,7 +5,7 @@ import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 export const CouraselItem = ({ children }) => {
   return (
     <div
-      className="w-full inline-flex rounded h-96 md:h-[35vw] relative"
+      className="w-full inline-flex rounded h-96 lg:h-[35vw] relative"
       style={{ transform: "scale(1)" }}
     >
       {children}

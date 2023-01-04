@@ -15,6 +15,10 @@ nav {
   z-index: 999;
 }
 
+.logo{
+  backdrop-filter: blur(24px);
+}
+
 .hero {
   height: max-content;
   /* padding-bottom: 2rem; */

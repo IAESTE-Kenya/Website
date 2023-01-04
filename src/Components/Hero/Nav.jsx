@@ -22,14 +22,14 @@ const Nav = () => {
 
   return (
     <nav
-      className={`py-2 md:px-2 md:py-4 z-50 ${
+      className={`py-2 lg:px-2 md:py-4 z-50 ${
         sticky === "sticky" ? `fixed w-full top-0 bg-stickyNav` : ""
       }`}
     >
       <div className="relative flex flex-row justify-between items-center mx-auto max-w-full md:max-w-screen-xl">
         <Link
           to="/"
-          className="flex flex-row items-center z-50"
+          className="logo flex flex-row items-center z-50"
         >
           <img src={logo} alt="" className="h-16 w-16" />
           <p className="text-white text-base font-bold md:text-2xl">
@@ -39,22 +39,22 @@ const Nav = () => {
         <div
           className={`flex flex-col items-start absolute px-3 pt-3 ${
             active ? `top-[4rem]` : `top-[-450%]`
-          } duration-500 w-full pb-4 bg-navColor space-y-3 md:flex-row md:pb-0 md:bg-none md:space-x-16 md:space-y-0 md:relative md:w-max md:top-0 md:pt-0`}
+          } duration-500 w-full pb-4 bg-navColor space-y-3 lg:flex-row lg:pb-0 md:bg-none lg:space-x-16 lg:space-y-0 lg:relative lg:w-max lg:top-0 lg:pt-0`}
         >
-          <a href="#home" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+          <a href="#home" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             About IAESTE
           </a>
-          <a href="#about" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+          <a href="#about" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             Students
           </a>
-          <a href="#contacts" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+          <a href="#contacts" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             Employers
           </a>
-          <a href="#contact" className="text-white border-b pb-1 w-full text-xl font-bold md:border-0 md:w-max md:pb-0">
+          <a href="#contact" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             Contact Us
           </a>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <Link
             to="/pricing"
             className="bg-buttonColor rounded py-3 px-6 text-base text-white font-bold hover:opacity-[0.7] duration-700"
@@ -63,7 +63,7 @@ const Nav = () => {
           </Link>
         </div>
         <div
-          className="flex mr-1 md:hidden z-50"
+          className="logo flex mr-1 lg:hidden z-50"
           onClick={() => setActive(!active)}
         >
           <AiOutlineMenu className="text-2xl text-white" />

@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials overflow-hidden md:max-w-screen-xl mx-auto my-10">
       <div>
-        <div className="w-full md:mx-auto md:w-[60vw]">
+        <div className="w-full md:mx-auto md:w-[90vw] lg:w-[60vw]">
           <Courasel>
             <CouraselItem>
               <img src={students} alt="" className="h-full w-full object-cover" />
@@ -18,7 +18,7 @@ const Testimonials = () => {
                   <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
                     Paid Professional Experience
                   </h2>
-                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                  <p className="whitespace-normal text-white lg:w-[60%] md:text-lg">
                     An IAESTE internship will be a highlight on your CV whenever
                     you apply for a job. Our paid internships provide real work
                     experience directly connected to your studies and are also
@@ -38,7 +38,7 @@ const Testimonials = () => {
                   <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
                     Experience And Discover With IAESTE
                   </h2>
-                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                  <p className="whitespace-normal text-white lg:w-[60%] md:text-lg">
                     IAESTE offer both remote and onsite internship, the good
                     news is that both internships are paid. You will et a chance
                     to connect with other people, work in a foreign country as a
@@ -59,7 +59,7 @@ const Testimonials = () => {
                   <h2 className="text-white font-black text-2xl whitespace-normal md:text-3xl">
                     Skilled Interns
                   </h2>
-                  <p className="whitespace-normal text-white md:w-[60%] md:text-lg">
+                  <p className="whitespace-normal text-white lg:w-[60%] md:text-lg">
                     Trainees with excellent communication skills (English is the
                     working language for the participation in the exchange
                     programme but other languages can be requested). IAESTE

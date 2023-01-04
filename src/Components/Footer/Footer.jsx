@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="pb-2 md:pt-4 lg:px-5 xl:px-0">
+    <footer className="pb-2 px-2 md:pt-4 lg:px-5 xl:px-0">
       <div className="flex flex-col max-w-screen-xl mx-auto pt-5">
-        <div className="flex flex-col md:flex-row md:space-x-20">
+        <div className="flex flex-col md:flex-row md:space-x-5 lg:space-x-20">
           <div className="flex flex-col px-2 space-y-3 md:w-[40%] md:px-0">
             <div className="flex flex-col md:space-y-2 md:-mt-6">
               <Link to="/" className="flex flex-row items-center">
@@ -86,7 +86,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col lg:space-y-2">
               <a
                 href="#about"
                 className="text-navColor text-base py-1.5 border-b border-gray-300 md:text-lg md:border-0"
