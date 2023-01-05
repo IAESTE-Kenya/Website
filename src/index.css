@@ -76,15 +76,13 @@ nav {
   }
 }
 
-/* .testimonials{
-    background-image: url('../src/Assets/house.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 3rem 0 1rem 0;
+.student, .internships{
+  background-image: url('../src/Assets/students.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@media(max-width: 700px){
-    .testimonials{
-        padding: 1rem 0;
-    }
-} */
+.students, .internship{
+  background-color: rgba(11,61,89, 0.92);
+}

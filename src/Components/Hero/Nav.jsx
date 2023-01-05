@@ -39,14 +39,14 @@ const Nav = () => {
         <div
           className={`flex flex-col items-start absolute px-3 pt-3 ${
             active ? `top-[4rem]` : `top-[-450%]`
-          } duration-500 w-full pb-4 bg-navColor space-y-3 lg:flex-row lg:pb-0 md:bg-none lg:space-x-16 lg:space-y-0 lg:relative lg:w-max lg:top-0 lg:pt-0`}
+          } duration-500 w-full pb-4 bg-navColor space-y-3 lg:flex-row lg:pb-0 md:bg-none lg:space-x-16 lg:space-y-0 lg:relative lg:w-max lg:top-0 lg:pt-0 lg:bg-transparent`}
         >
           <a href="#home" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             About IAESTE
           </a>
-          <a href="#about" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
+          <Link to="/students" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             Students
-          </a>
+          </Link>
           <a href="#contacts" className="text-white border-b pb-1 w-full text-xl font-bold lg:border-0 lg:w-max lg:pb-0">
             Employers
           </a>

@@ -3,12 +3,14 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Privacy from "./Components/Privacy/Privacy";
 import Terms from "./Components/Terms/Terms";
+import Students from "./Components/Students/Students";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/students" element={<Students />}/>
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms and conditions" element={<Terms />} />
       </Routes>
