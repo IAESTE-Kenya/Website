@@ -11,18 +11,54 @@ body {
   background-color: #eeee;
 }
 
+form ::placeholder{
+  color: white;
+  font-size: 16px;
+}
+
+.image{
+  object-position: 0% 35%;
+}
+
+.image2{
+  object-position: 0% 70%;
+}
+
+@media(max-width: 480px){
+  .image{
+    object-position: initial;
+  }
+
+  .image2{
+    object-position: 0% 80%;
+  }
+}
+
 
 .hero {
   height: max-content;
-  /* padding-bottom: 2rem; */
 }
 
-#pricing {
-  margin-top: 4rem;
+.form{
+  background-image: url('../src/Assets/logo-blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1000px;
 }
+
+.form{
+  background-color: rgba(11,61,89, 0.9);
+}
+
+@media(max-width: 468px){
+  .form{
+    background-size: 400px;
+  }
+}
+
 
 .footer {
-  margin: 10rem auto 5rem; /* transform: scale(1.2); */
+  margin: 10rem auto 5rem;
 }
 
 .policy p {

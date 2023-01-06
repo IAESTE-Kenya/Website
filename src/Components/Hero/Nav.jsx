@@ -1,8 +1,6 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from 'react-icons/rx';
-import { BsTwitter, BsLinkedin } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo2.png";
 import { useState } from "react";
@@ -13,7 +11,7 @@ const Nav = () => {
 
   //sticky nav
   window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 100) {
+    if (window.pageYOffset >= 180) {
       return setSticky("sticky");
     }
     setSticky("#");
@@ -21,12 +19,13 @@ const Nav = () => {
 
   //disbale window scroll
   const overflowFunction = () =>{
-    if(active === false){
+    if(active === true){
       document.body.style.overflow = "hidden"
-    }else if(active === true){
+    }else if(active === false){
       document.body.style.overflow = "auto"
     }
   }
+  overflowFunction();
 
 
   return (
@@ -55,14 +54,14 @@ const Nav = () => {
               <img src={logo} alt="" className="h-12 w-12" />
               <p className="text-base font-semibold text-white">IAESTE <span className="block text-sm text-center -mt-1">Kenya</span></p>
             </Link>
-            <RxCross1 className="text-white font-bold text-3xl" onClick={() => { setActive(false); overflowFunction() }}/>
+            <RxCross1 className="text-white font-bold text-3xl" onClick={() =>  setActive(false) }/>
           </div>
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold lg:border-0 lg:w-max lg:py-0"
           >
             About IAESTE
-          </a>
+          </Link>
           <Link
             to="/students"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold lg:pl-0 lg:border-0 lg:w-max lg:py-0"
@@ -76,23 +75,30 @@ const Nav = () => {
             Employers
           </a>
           <a
-            href="#contact"
+            href="#contacts"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold lg:pl-0 lg:border-0 lg:w-max lg:py-0"
+          >
+            Alumni
+          </a>
+          <Link
+            to="/contact-us"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold lg:pl-0 lg:border-0 lg:w-max lg:py-0"
           >
             Contact Us
-          </a>
-          <div className="flex flex-col pt-16 items-center w-full lg:hidden">
+          </Link>
+          <div className="flex flex-col gap-3 pt-10 items-center w-full lg:hidden">
           <a
             href="https://iaeste.smartsimple.ie/"
             className="bg-white rounded py-2.5 px-10 text-base text-navColor font-bold hover:opacity-[0.7] duration-700"
           >
             APPLY NOW
           </a>
-        </div>
-        <div className="flex flex-row justify-center items-center gap-5 w-full mt-10 lg:hidden">
-          <a href="https://www.linkedin.com/company/iaeste-kenya/"><AiFillInstagram className="text-navColor text-3xl"/></a>
-          <a href="https://twitter.com/iaesteKe"><BsTwitter className="text-navColor text-3xl"/></a>
-          <a href="https://www.instagram.com/iaeste.kenya/"><BsLinkedin className="text-navColor text-2xl"/></a>
+          <Link
+            to="/employees"
+            className="bg-white rounded py-2.5 px-10 text-base text-navColor font-bold hover:opacity-[0.7] duration-700"
+          >
+            OFFER INTERNSHIP
+          </Link>
         </div>
         </div>
         <div className="hidden lg:flex">
@@ -105,7 +111,7 @@ const Nav = () => {
         </div>
         <div
           className="logo flex mr-1 lg:hidden"
-          onClick={() => { setActive(!active); overflowFunction() }}
+          onClick={() =>  setActive(!active)}
         >
           <AiOutlineMenu className="text-2xl text-white" />
         </div>
