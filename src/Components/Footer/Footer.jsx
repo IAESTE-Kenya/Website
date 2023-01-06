@@ -89,37 +89,37 @@ const Footer = () => {
             <div className="flex flex-col lg:space-y-2">
               <a
                 href="#about"
-                className="text-navColor text-base py-1.5 border-b border-gray-300 md:text-lg md:border-0"
+                className="text-navColor text-base py-1.5 border-b  border-gray-300 font-semibold md:text-lg md:border-0"
               >
                 STUDENTS
               </a>
               <a
                 href="#about"
-                className="text-navColor py-1.5 border-b border-gray-300 text-base md:text-lg md:border-0"
+                className="text-navColor py-1.5 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0"
               >
                 EMPLOYERS
               </a>
               <a
                 href="#about"
-                className="text-navColor py-1.5 border-b border-gray-300 text-base md:text-lg md:border-0"
+                className="text-navColor py-1.5 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0"
               >
                 ALUMNI
               </a>
               <Link
                 to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base md:border-0"
+                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
               >
                 EVENTS
               </Link>
               <Link
                 to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base md:border-0"
+                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
               >
                 TESTIMONIALS
               </Link>
               <Link
                 to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base md:border-0"
+                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
               >
                 ABOUT IAESTE
               </Link>

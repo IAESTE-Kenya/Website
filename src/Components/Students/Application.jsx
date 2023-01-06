@@ -16,13 +16,13 @@ const Application = () => {
       id: 2,
       image: none2,
       title: "Get in contact with your LC",
-      text: "Once registered and approved, your national committee with guide you through the application process.",
+      text: "Once registered and approved, our national or your local committee will guide you through the application process.",
     },
     {
       id: 3,
       image: none3,
       title: "Be accepted by the employer",
-      text: "Once you've been selected by your committee you will prepare your documents which will be forwarded to the employer.",
+      text: "Once you've been selected by the committee you will prepare your documents which will be forwarded to the employer.",
     },
     {
       id: 4,

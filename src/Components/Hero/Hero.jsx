@@ -2,6 +2,7 @@ import React from "react";
 import students from '../../Assets/image5.jpeg';
 import employer from '../../Assets/internship.jpg'
 import  { MdOutlineArrowRightAlt } from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 import Nav from "./Nav";
 
@@ -10,7 +11,9 @@ const Hero = () => {
     <section className="hero flex flex-col bg-navColor relative" id="home">
       {/* nav */}
 
-      <Nav />
+      <div className="bg-buttonColor lg:bg-transparent">
+        <Nav />
+      </div>
 
       {/* hero */}
       <div className="flex flex-col space-y-10 mt-10 px-2 h-full pb-10 w-full max-w-screen-xl mx-auto md:mt-0 md:space-y-10 lg:gap-20 xl:px-0 lg:px-5 lg:mt-20 lg:flex-row md:space-y-0">
@@ -21,8 +24,8 @@ const Hero = () => {
             <p className="text-white text-xl md:text-2xl">Are you currently studying and want to do a work placement abroad?</p>
           </div>
           <div className="flex flex-col border-t pt-2">
-            <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Internship abroad</a>
-            <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Current Internship Offers</a>
+            <Link to="/students" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Internship abroad</Link>
+            <a href="https://iaeste.org/internships" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Current Internship Offers</a>
           </div>
         </div>
         <div className="flex flex-col lg:w-1/2">

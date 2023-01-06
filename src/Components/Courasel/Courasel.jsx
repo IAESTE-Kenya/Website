@@ -27,19 +27,19 @@ const Courasel = ({ children }) => {
   // console.log(currentIndex)
 
   const [paused, setPaused] = useState(false);
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (!paused) {
-  //       setCurrentIndex(currentIndex + 1);
-  //     }
-  //   }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!paused) {
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 3000);
 
-  //   return () => {
-  //     if (interval) {
-  //       clearInterval(interval);
-  //     }
-  //   };
-  // });
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  });
 
   const reactChildren = React.Children.toArray(children);
 

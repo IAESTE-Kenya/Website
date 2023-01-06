@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Nav from "../Hero/Nav";
 import Application from "./Application";
+import display from '../../Assets/amani.jpeg'
+import display2 from '../../Assets/image3.jpg'
 
 const Students = () => {
   return (
@@ -11,7 +13,7 @@ const Students = () => {
           <div className="bg-buttonColor md:bg-transparent">
             <Nav />
           </div>
-          <div className="flex flex-row px-5 mx-auto max-w-screen-xl mt-10 lg:px-0 lg:mt-16">
+          <div className="flex flex-row px-2 mx-auto max-w-screen-xl mt-10 lg:px-0 lg:mt-16">
             <div className="lg:w-1/2">
               <button className="bg-buttonColor w-max py-2 px-5 text-white text-lg font-semibold rounded md:py-3 px-10">
                 Students
@@ -33,10 +35,11 @@ const Students = () => {
           How it Works
         </h2>
         <div className="flex flex-col mt-5">
-          <h2 className="text-navColor text-xl font-semibold my-2 md:my-5 md:text-2xl">
+        <h2 className="text-navColor text-xl font-semibold my-2 md:my-5 md:text-2xl">
             1. Internship Abroad
           </h2>
-          <p className="text-navColor md:text-lg">
+          <img src={display} alt="" className="h-64 md:h-[500px] object-cover object-center"/>
+          <p className="text-navColor mt-3 md:text-lg">
             Placements both in industry and at research institutes are
             available. The majority of IAESTE placements last for 2–3 months and
             frequently take place in summer. In general, the placements are
@@ -47,14 +50,15 @@ const Students = () => {
             necessary formalities on your behalf.
           </p>
         </div>
-        <div className="flex flex-col mt-5 md:mt-0">
+        <div className="flex flex-col mt-5 md:mt-16">
           <h2 className="text-navColor text-xl font-semibold my-2 md:my-5 md:text-2xl">
             2. Internship in Kenya
           </h2>
-          <p className="text-navColor md:text-lg">
+          <img src={display2} alt="" className="h-64 md:h-[500px] object-cover object-center"/>
+          <p className="text-navColor mt-3 md:text-lg">
             Unfortunately, no applications for an internship in Kenya can be
-            accepted directly by the Kenya Committee. Anyone interested in doing
-            a work placement in Germany is advised to contact the IAESTE
+            accepted directly by the Kenyan Committee. Anyone interested in doing
+            a work placement in Kenya is advised to contact the IAESTE
             National Committee in their home country.<br></br>
             <br></br>
             Dear applicant, we are delighted that you have applied for a work
