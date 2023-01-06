@@ -19,7 +19,7 @@ const Contact = () => {
             as soon as possible.
           </p>
         </div>
-        <Link className="bg-buttonColor font-semibold py-3 px-10 text-semibold text-white text-base rounded-lg flex items-center gap-2 md:text-xl md:py-2 md:px-5 hover:opacity-[0.7] ease-in-out duration-500">
+        <Link to="/contact-us" className="bg-buttonColor font-semibold py-3 px-10 text-semibold text-white text-base rounded-lg flex items-center gap-2 md:text-xl md:py-2 md:px-5 hover:opacity-[0.7] ease-in-out duration-500">
           Contact Us <HiOutlineArrowNarrowRight />
         </Link>
       </div>
