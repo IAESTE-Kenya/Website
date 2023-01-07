@@ -161,9 +161,9 @@ const Students = () => {
         </div>
       </div>
 
-      <div className="flex flex-col my-20 mx-auto max-w-screen-xl px-2 md:flex-row md:px-0">
+      <div className="flex flex-col my-10 mx-auto max-w-screen-xl px-2 md:my-20 md:flex-row md:px-0">
         <div className="space-y-5 md:space-y-16 md:w-[40%]">
-          <h2 className="text-navColor text-3xl md:text-4xl lg:text-6xl">
+          <h2 className="text-navColor font-semibold text-4xl md:text-4xl lg:text-6xl">
             Discover the Experiences of Previous Interns
           </h2>
           <p className="text-navColor text-lg md:text-xl">
