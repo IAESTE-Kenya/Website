@@ -1,12 +1,11 @@
-// eslint-disable-next-line
+// eslint-disable-next-line 
 import React, { useState, useEffect } from "react";
 import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 export const CouraselItem = ({ children }) => {
   return (
     <div
-      className="w-full inline-flex rounded h-96 lg:h-[35vw] relative"
-      style={{ transform: "scale(1)" }}
+      className="w-full inline-flex rounded h-96 lg:h-[35vw] relative rounded"
     >
       {children}
     </div>
@@ -62,7 +61,7 @@ const Courasel = ({ children }) => {
       <div
         onMouseEnter={() => setPaused(!paused)}
         onMouseLeave={() => setPaused(!paused)}
-        className={`inner whitespace-nowrap  md:space-x-2 duration-700`}
+        className={`inner whitespace-nowrap duration-700`}
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {

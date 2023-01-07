@@ -2,6 +2,8 @@ import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Nav from "../Hero/Nav";
 import Application from "./Application";
+import Stories from "./Stories";
+
 import display from "../../Assets/amani.jpeg";
 import display2 from "../../Assets/display.jpeg";
 
@@ -58,7 +60,7 @@ const Students = () => {
           <h2 className="text-navColor text-xl font-semibold my-2 md:my-5 md:text-2xl">
             2. Internship in Kenya
           </h2>
-         <img
+          <img
             src={display2}
             alt=""
             className="h-64 md:h-[500px] object-cover image"
@@ -157,6 +159,23 @@ const Students = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-col my-20 mx-auto max-w-screen-xl px-2 md:flex-row md:px-0">
+        <div className="space-y-5 md:space-y-16 md:w-[40%]">
+          <h2 className="text-navColor text-3xl md:text-4xl lg:text-6xl">
+            Discover the Experiences of Previous Interns
+          </h2>
+          <p className="text-navColor text-lg md:text-xl">
+            Every year, IAESTE Kenya exchanges interns from Kenya to different
+            IAESTE member countries. Each intern narrates their experiences with
+            IAESTE. You can read these and more stories from different inters
+          </p>
+          <button className="bg-buttonColor py-3 px-5 text-white font-semibold rounded">
+            DISCOVER MORE STORIES
+          </button>
+        </div>
+        <Stories />
       </div>
     </section>
   );
