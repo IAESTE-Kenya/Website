@@ -91,7 +91,6 @@ form ::placeholder{
     width: 100%;
   }
 
-<<<<<<< HEAD
   .policy li {
     margin: 0 0 0 1rem;
   }
@@ -116,11 +115,9 @@ form ::placeholder{
 .students, .internship{
   background-color: rgba(11,61,89, 0.95);
 }
-=======
     .policy h1{
         padding: 1rem 0 1rem 1rem;
     }
-}
 
 /* .testimonials{
     background-image: url('../src/Assets/house.jpg');
@@ -134,4 +131,4 @@ form ::placeholder{
         padding: 1rem 0;
     }
 } */
->>>>>>> 9124b4b58b4f11c7fa8748f42afeaf4ede49ea2a
+

@@ -11,17 +11,6 @@ const Privacy = () => {
 
       {/* containter */}
       <div className="flex flex-col max-w-screen-xl mx-auto px-2 md:px-0">
-<<<<<<< HEAD
-=======
-        <div className="mx-auto w-full">
-          <img
-            src={image}
-            alt=""
-            className="h-64 w-full object-cover md:h-96"
-          />
-        </div>
-        
->>>>>>> 9124b4b58b4f11c7fa8748f42afeaf4ede49ea2a
         <div className="policy mb-5 mx-auto bg-white md:px-5 md:py-10 md:mb-10">
           <h1 className="text-2xl text-navColor font-bold mb-5 border-b pb-2 md:mb-10 md:text-4xl">
             Privacy Policy
