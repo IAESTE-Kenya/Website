@@ -119,15 +119,8 @@ form ::placeholder {
   padding: 1rem 0 1rem 1rem;
 }
 
-/* .testimonials{
-    background-image: url('../src/Assets/house.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 3rem 0 1rem 0;
+@media(max-width: 500px){
+  .courasel{
+    margin: 0 !important;
+  }
 }
-
-@media(max-width: 700px){
-    .testimonials{
-        padding: 1rem 0;
-    }
-} */

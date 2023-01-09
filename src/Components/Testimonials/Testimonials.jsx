@@ -9,9 +9,9 @@ const Testimonials = () => {
   return (
     <section className="testimonials overflow-hidden md:max-w-screen-xl mx-auto my-10">
       <div>
-        <div className="w-full md:mx-auto md:w-[90vw] lg:w-[60vw]">
-          <Courasel>
-            <CouraselItem>
+        <div className="w-full md:mx-auto md:w-[90vw] lg:w-[75%]">
+          <Courasel display="flex">
+            <CouraselItem padding="0">
               <img src={students} alt="" className="h-full w-full object-cover" />
               <div className="absolute bg-imgColor w-full h-full">
                 <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">
@@ -31,7 +31,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </CouraselItem>
-            <CouraselItem>
+            <CouraselItem padding="5px">
               <img src={plane} alt="" className="h-full w-full object-cover" />
               <div className="absolute bg-imgColor w-full h-full">
                 <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">
@@ -52,7 +52,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </CouraselItem>
-            <CouraselItem>
+            <CouraselItem padding="5px">
               <img src={image3} alt="" className="h-full w-full object-cover" />
               <div className="absolute bg-imgColor w-full h-full">
                 <div className="flex flex-col justify-center h-full space-y-5 pl-2 md:space-y-10 md:p-20">

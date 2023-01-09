@@ -9,7 +9,7 @@ import { MdLocationOn } from "react-icons/md";
 const Stories = () => {
   return (
     <div className="overflow-hidden mt-10 md:mt-0 md:w-[60%]">
-      <Courasel>
+      <Courasel display="none">
         <CouraselItem>
           <div className="flex flex-col w-full">
             <img src={image} alt="" className="h-[65%] w-full object-cover" />

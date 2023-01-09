@@ -2,17 +2,18 @@
 import React, { useState, useEffect } from "react";
 import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
-export const CouraselItem = ({ children }) => {
+export const CouraselItem = ({ children, padding }) => {
   return (
     <div
-      className="w-full inline-flex rounded h-96 lg:h-[500px] xl:h-[600px] relative rounded mx-2"
+      className="courasel w-full inline-flex rounded h-96 lg:h-[450px] xl:h-[650px] relative rounded"
+      style={{marginLeft: padding, marginRight: padding}}
     >
       {children}
     </div>
   );
 };
 
-const Courasel = ({ children }) => {
+const Courasel = ({ children, display }) => {
   const [currentIndex, setIndex] = useState(1);
 
   const setCurrentIndex = (newIndex) => {
@@ -26,25 +27,25 @@ const Courasel = ({ children }) => {
   // console.log(currentIndex)
 
   const [paused, setPaused] = useState(false);
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (!paused) {
-  //       setCurrentIndex(currentIndex + 1);
-  //     }
-  //   }, 3000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!paused) {
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 3000);
 
-  //   return () => {
-  //     if (interval) {
-  //       clearInterval(interval);
-  //     }
-  //   };
-  // });
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  });
 
   const reactChildren = React.Children.toArray(children);
 
   return (
     <div>
-      <div className="flex flex-row justify-end space-x-3 mb-2">
+      <div className="flex-row justify-end space-x-3 mb-2" style={{display: display}}>
         <div
           className="bg-navColor py-2 px-3 rounded cursor-pointer"
           onClick={() => setCurrentIndex(currentIndex - 1)}

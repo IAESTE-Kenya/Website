@@ -162,7 +162,7 @@ const Students = () => {
       </div>
 
       <div className="flex flex-col my-10 mx-auto max-w-screen-xl px-2 md:my-20 md:flex-row xl:px-0">
-        <div className="space-y-5 xl:space-y-16 md:w-[40%]">
+        <div className="space-y-5 md:w-[40%] lg:px-1.5 xl:space-y-16">
           <h2 className="text-navColor font-semibold text-4xl md:text-4xl xl:text-6xl">
             Discover the Experiences of Previous Interns
           </h2>
