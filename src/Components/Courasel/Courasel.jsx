@@ -5,7 +5,7 @@ import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 export const CouraselItem = ({ children }) => {
   return (
     <div
-      className="w-full inline-flex rounded h-96 lg:h-[35vw] relative rounded"
+      className="w-full inline-flex rounded h-96 lg:h-[500px] xl:h-[600px] relative rounded mx-2"
     >
       {children}
     </div>
@@ -26,19 +26,19 @@ const Courasel = ({ children }) => {
   // console.log(currentIndex)
 
   const [paused, setPaused] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!paused) {
-        setCurrentIndex(currentIndex + 1);
-      }
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!paused) {
+  //       setCurrentIndex(currentIndex + 1);
+  //     }
+  //   }, 3000);
 
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  });
+  //   return () => {
+  //     if (interval) {
+  //       clearInterval(interval);
+  //     }
+  //   };
+  // });
 
   const reactChildren = React.Children.toArray(children);
 

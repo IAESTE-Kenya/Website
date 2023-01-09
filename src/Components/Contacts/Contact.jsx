@@ -4,7 +4,8 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div className="px-2 mx-auto lg:px-0 xl:max-w-screen-xl lg:max-w-[85vw]">
+    <div className="w-full lg:px-2 xl:px-0">
+      <div className="px-2 mx-auto lg:px-0 max-w-screen-xl">
       <div
       className="contact p-5 bg-navColor  mt-10 mb-10 rounded-lg md:py-20 md:px-10"
       id="contacts"
@@ -23,6 +24,7 @@ const Contact = () => {
           Contact Us <HiOutlineArrowNarrowRight />
         </Link>
       </div>
+    </div>
     </div>
     </div>
   );

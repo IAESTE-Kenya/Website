@@ -11,51 +11,49 @@ body {
   background-color: #eeee;
 }
 
-form ::placeholder{
+form ::placeholder {
   color: white;
   font-size: 16px;
 }
 
-.image{
+.image {
   object-position: 0% 35%;
 }
 
-.image2{
+.image2 {
   object-position: 0% 70%;
 }
 
-@media(max-width: 480px){
-  .image{
+@media (max-width: 480px) {
+  .image {
     object-position: initial;
   }
 
-  .image2{
+  .image2 {
     object-position: 0% 80%;
   }
 }
-
 
 .hero {
   height: max-content;
 }
 
-.form{
-  background-image: url('../src/Assets/logo-blue.png');
+.form {
+  background-image: url("../src/Assets/logo-blue.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1000px;
 }
 
-.form{
-  background-color: rgba(11,61,89, 0.9);
+.form {
+  background-color: rgba(11, 61, 89, 0.9);
 }
 
-@media(max-width: 468px){
-  .form{
+@media (max-width: 468px) {
+  .form {
     background-size: 400px;
   }
 }
-
 
 .footer {
   margin: 10rem auto 5rem;
@@ -105,19 +103,21 @@ form ::placeholder{
   }
 }
 
-.student, .internships{
-  background-image: url('../src/Assets/students.jpeg');
+.student,
+.internships {
+  background-image: url("../src/Assets/students.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.students, .internship{
-  background-color: rgba(11,61,89, 0.95);
+.students,
+.internship {
+  background-color: rgba(11, 61, 89, 0.95);
 }
-    .policy h1{
-        padding: 1rem 0 1rem 1rem;
-    }
+.policy h1 {
+  padding: 1rem 0 1rem 1rem;
+}
 
 /* .testimonials{
     background-image: url('../src/Assets/house.jpg');
@@ -131,4 +131,3 @@ form ::placeholder{
         padding: 1rem 0;
     }
 } */
-

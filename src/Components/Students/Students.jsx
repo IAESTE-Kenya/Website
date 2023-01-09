@@ -11,16 +11,16 @@ const Students = () => {
   return (
     <section className="mx-auto">
       <div className="student">
-        <div className="students pb-10 lg:pb-[6vw] md:h-[60vh]">
+        <div className="students pb-10 lg:pb-[6vw]">
           <div className="bg-buttonColor md:bg-transparent">
             <Nav />
           </div>
-          <div className="flex flex-row px-2 h-max items-center mx-auto mt-16 max-w-screen-xl md:mt-0 md:h-full lg:px-0">
-            <div className="lg:w-1/2">
+          <div className="flex flex-row px-2 h-max items-center mx-auto mt-16 max-w-screen-xl md:h-full xl:px-0">
+            <div className="lg:w-3/4 xl:w-1/2">
               <button className="bg-buttonColor w-max py-2 px-10 text-white text-lg font-semibold rounded md:py-3 px-10">
                 Students
               </button>
-              <div className="flex flex-col mt-10 lg:mt-20">
+              <div className="flex flex-col mt-10 md:mt-10 xl:mt-20">
                 <h2 className="text-white text-4xl md:text-6xl font-bold md:leading-tight">
                   Experience a life-changing internship with IAESTE
                 </h2>
@@ -32,7 +32,7 @@ const Students = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mt-10 mx-auto max-w-screen-xl px-2 lg:px-0">
+      <div className="flex flex-col mt-10 mx-auto max-w-screen-xl px-2 xl:px-0">
         <h2 className="text-navColor text-4xl font-semibold text-center md:text-5xl lg:text-6xl">
           How it Works
         </h2>
@@ -101,7 +101,7 @@ const Students = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-auto max-w-screen-xl px-2 mt-10 lg:mt-16 lg:px-0">
+      <div className="flex flex-col mx-auto max-w-screen-xl px-2 mt-10 lg:mt-16 xl:px-0">
         <h2 className="text-navColor text-center my-5 text-4xl font-semibold md:text-5xl lg:text-6xl">
           How to Apply
         </h2>
@@ -161,12 +161,12 @@ const Students = () => {
         </div>
       </div>
 
-      <div className="flex flex-col my-10 mx-auto max-w-screen-xl px-2 md:my-20 md:flex-row md:px-0">
-        <div className="space-y-5 md:space-y-16 md:w-[40%]">
-          <h2 className="text-navColor font-semibold text-4xl md:text-4xl lg:text-6xl">
+      <div className="flex flex-col my-10 mx-auto max-w-screen-xl px-2 md:my-20 md:flex-row xl:px-0">
+        <div className="space-y-5 xl:space-y-16 md:w-[40%]">
+          <h2 className="text-navColor font-semibold text-4xl md:text-4xl xl:text-6xl">
             Discover the Experiences of Previous Interns
           </h2>
-          <p className="text-navColor text-lg md:text-xl">
+          <p className="text-navColor text-lg xl:text-xl">
             Every year, IAESTE Kenya exchanges interns from Kenya to different
             IAESTE member countries. Each intern narrates their experiences with
             IAESTE. You can read these and more stories from different inters

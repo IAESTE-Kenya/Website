@@ -4,9 +4,9 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Anniversary = () => {
   return (
-    <section className="mx-auto max-w-screen-xl px-2 my-20 lg:my-28 lg:px-0">
+    <section className="mx-auto max-w-screen-xl px-2 my-20 lg:my-28 xl:px-0">
       <div
-        className="flex flex-col lg:flex-row lg:space-x-20"
+        className="flex flex-col lg:flex-row lg:space-x-5 xl:space-x-20"
       >
         <a href="https://iaeste.org/history" className="h-24 lg:h-46 lg:w-1/2">
           <img src={image} alt="" className="h-full w-full object-contain" />
@@ -15,7 +15,7 @@ const Anniversary = () => {
           <h2 className="text-2xl text-navColor font-semibold mb-3 md:mt-10 md:text-center lg:text-start lg:mt-0">
             IAESTE celebrates 75th anniversary
           </h2>
-          <p className="text-navColor md:w-[80%] md:mx-auto md:text-center lg:mx-0 lg:text-start">
+          <p className="text-navColor xl:w-[80%] md:mx-auto md:text-center lg:mx-0 lg:text-start">
             IAESTE was founded in 1948 in London. In the aftermath of World War
             II, a new spirit pervaded the world: desire for international
             understanding and co-operation. It was this spirit that brought

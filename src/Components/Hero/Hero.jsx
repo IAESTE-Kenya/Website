@@ -11,12 +11,12 @@ const Hero = () => {
     <section className="hero flex flex-col bg-navColor relative" id="home">
       {/* nav */}
 
-      <div className="bg-buttonColor lg:bg-transparent">
+      <div className="bg-buttonColor xl:bg-transparent">
         <Nav />
       </div>
 
       {/* hero */}
-      <div className="flex flex-col space-y-10 mt-10 px-2 h-full pb-10 w-full max-w-screen-xl mx-auto md:mt-0 md:space-y-0 lg:gap-20 xl:px-0 lg:px-5 lg:mt-20 lg:flex-row md:space-y-0">
+      <div className="flex flex-col space-y-10 mt-10 px-2 h-full pb-10 w-full max-w-screen-xl mx-auto md:mt-0 md:space-y-0 lg:gap-5 xl:gap-20 xl:px-0 lg:px-5 lg:mt-20 lg:flex-row md:space-y-0">
         <div className="flex flex-col lg:w-1/2">
           <img src={students} alt="" className="h-46 w-full object-cover md:h-96"/>
           <div className="flex flex-col mt-5 pb-2">
