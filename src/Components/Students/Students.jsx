@@ -11,11 +11,11 @@ const Students = () => {
   return (
     <section className="mx-auto">
       <div className="student">
-        <div className="students pb-10 lg:pb-[6vw]">
+        <div className="students pb-10 lg:pb-[10vw] xl:h-[75vh]">
           <div className="bg-buttonColor md:bg-transparent">
             <Nav />
           </div>
-          <div className="flex flex-row px-2 h-max items-center mx-auto mt-16 max-w-screen-xl md:h-full xl:px-0">
+          <div className="flex flex-row px-2 h-max items-center mx-auto mt-10 max-w-screen-xl md:h-full xl:px-0">
             <div className="lg:w-3/4 xl:w-1/2">
               <button className="bg-buttonColor w-max py-2 px-10 text-white text-lg font-semibold rounded md:py-3 px-10">
                 Students

@@ -68,18 +68,18 @@ const Nav = () => {
           >
             Students
           </Link>
-          <a
-            href="#contacts"
+          <Link
+            to="/employers"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
           >
             Employers
-          </a>
-          <a
-            href="#contacts"
+          </Link>
+          <Link
+            to="/employers"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
           >
             Alumni
-          </a>
+          </Link>
           <Link
             to="/contact-us"
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"

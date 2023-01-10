@@ -3,6 +3,7 @@ import Home from "./Components/Home/Home";
 import Privacy from "./Components/Privacy/Privacy";
 import Terms from "./Components/Terms/Terms";
 import Students from "./Components/Students/Students";
+import Employers from "./Components/Employers/Employers";
 import Form from "./Components/Contacts/Form";
 import Footer from "./Components/Footer/Footer";
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/students" element={<Students />}/>
+        <Route path="/employers" element={<Employers />}/>
         <Route path="contact-us" element={<Form />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms and conditions" element={<Terms />} />

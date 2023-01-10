@@ -24,6 +24,10 @@ form ::placeholder {
   object-position: 0% 70%;
 }
 
+.employer-image{
+  object-position: 0% 0%;
+}
+
 @media (max-width: 480px) {
   .image {
     object-position: initial;
@@ -31,6 +35,10 @@ form ::placeholder {
 
   .image2 {
     object-position: 0% 80%;
+  }
+
+  .employer-image{
+    object-position: 100%;
   }
 }
 
