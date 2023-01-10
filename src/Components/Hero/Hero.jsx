@@ -35,7 +35,7 @@ const Hero = () => {
             <p className="text-white text-xl md:text-2xl">Are you running a business, and would you like to employ an international intern?</p>
           </div>
           <div className="flex flex-col border-t pt-2">
-          <a href="#link" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Offer an internship</a>
+          <Link to="/employers" className="italic text-white text-lg flex flex-row items-center gap-1 hover:border-b w-max"><MdOutlineArrowRightAlt className="text-3xl"/>Offer an internship</Link>
           </div>
         </div>
       </div>

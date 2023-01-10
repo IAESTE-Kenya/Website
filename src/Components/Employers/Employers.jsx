@@ -2,6 +2,8 @@ import React from "react";
 import Nav from "../Hero/Nav";
 import EmployerApp from "./EmployerApp";
 import { benefits, process } from "./Data";
+
+import { TbExternalLink } from 'react-icons/tb'
 import image from "../../Assets/offer.jpg";
 
 const Employers = () => {
@@ -50,8 +52,9 @@ const Employers = () => {
             To get started, you must register as an employer on the{" "}
             <a
               href="https://iaeste.smartsimple.ie/s_Login.jsp"
-              className="underline"
+              className="flex flex-row items-center gap-1 border-b border-gray-500 w-max"
             >
+              <TbExternalLink />
               IAESTE Exchange Platform.
             </a>{" "}
             After verification, we will send your login details, and guidelines
