@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col px-2 space-y-8 md:space-y-0 md:justify-between md:flex-row md:w-[60%] md:pl-0">
-            <div className="flex flex-col space-y-4 mt-5 md:mt-0 xl:ml-24">
+            <div className="flex flex-col space-y-4 mt-5 md:mt-0  xl:ml-24">
               <div className="flex flex-col">
                 <h2 className="text-gray-500 mb-2">Contact Information</h2>
                 <a href="tel:+254791686851" className="text-base text-gray-500">
@@ -86,40 +86,40 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col lg:space-y-2">
-              <a
-                href="#about"
-                className="text-navColor text-base py-1.5 border-b  border-gray-300 font-semibold md:text-lg md:border-0"
+            <div className="flex flex-col lg:space-y-1">
+              <Link
+                to="students"
+                className="text-navColor text-base py-3 border-b w-full border-gray-300 font-semibold md:text-lg md:border-0 md:py-1"
               >
                 STUDENTS
-              </a>
-              <a
-                href="#about"
-                className="text-navColor py-1.5 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0"
+              </Link>
+              <Link
+                to="/employers"
+                className="text-navColor py-3 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0 md:py-1"
               >
                 EMPLOYERS
-              </a>
-              <a
-                href="#about"
-                className="text-navColor py-1.5 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0"
+              </Link>
+              <Link
+                to="/alumni"
+                className="text-navColor py-3 border-b border-gray-300 text-base font-semibold md:text-lg md:border-0 md:py-1"
               >
                 ALUMNI
-              </a>
+              </Link>
               <Link
-                to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
+                to="/events"
+                className="text-navColor border-b border-gray-300 py-3 text-base font-semibold md:border-0 md:py-1"
               >
                 EVENTS
               </Link>
               <Link
-                to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
+                to="/testimonials"
+                className="text-navColor border-b border-gray-300 py-3 text-base font-semibold md:border-0 md:py-1"
               >
                 TESTIMONIALS
               </Link>
               <Link
-                to="/pricing"
-                className="text-navColor border-b border-gray-300 py-1.5 text-base font-semibold md:border-0"
+                to="/home"
+                className="text-navColor border-b border-gray-300 py-3 text-base font-semibold md:border-0 md:py-1"
               >
                 ABOUT IAESTE
               </Link>
@@ -138,7 +138,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between mt-8 space-y-4 items-center md:flex-row md:space-y-0">
+        <div className="flex flex-col justify-between mt-4 space-y-4 items-center md:flex-row md:space-y-0">
           <div className="flex flex-col text-center space-y-2 md:flex-row md:space-y-0 md:space-x-10">
             <Link to="privacy-policy" className="text-gray-500">
               Privacy Policy

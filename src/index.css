@@ -24,7 +24,7 @@ form ::placeholder {
   object-position: 0% 70%;
 }
 
-.employer-image{
+.employer-image {
   object-position: 0% 0%;
 }
 
@@ -37,7 +37,7 @@ form ::placeholder {
     object-position: 0% 80%;
   }
 
-  .employer-image{
+  .employer-image {
     object-position: 100%;
   }
 }
@@ -123,12 +123,27 @@ form ::placeholder {
 .internship {
   background-color: rgba(11, 61, 89, 0.95);
 }
+
+
+
+
 .policy h1 {
   padding: 1rem 0 1rem 1rem;
 }
 
-@media(max-width: 500px){
-  .courasel{
+@media (max-width: 500px) {
+  .courasel {
     margin: 0 !important;
   }
+
+  /* .event-list:nth-child(1){
+    height: 12rem;
+  }
+  .event-list:nth-child(4){
+    height: 12rem;
+  }
+  .event-list:nth-child(5){
+    height: 12rem;
+  } */
+
 }

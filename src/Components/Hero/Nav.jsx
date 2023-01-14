@@ -58,31 +58,37 @@ const Nav = () => {
           </div>
           <Link
             to="/"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:border-0 xl:w-max xl:py-0"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             About IAESTE
           </Link>
           <Link
             to="/students"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             Students
           </Link>
           <Link
             to="/employers"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             Employers
           </Link>
           <Link
+            to="/events"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
+          >
+            Events
+          </Link>
+          <Link
             to="/employers"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             Alumni
           </Link>
           <Link
             to="/contact-us"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0"
+            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             Contact Us
           </Link>

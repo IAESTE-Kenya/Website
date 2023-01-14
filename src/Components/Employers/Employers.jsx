@@ -3,7 +3,6 @@ import Nav from "../Hero/Nav";
 import EmployerApp from "./EmployerApp";
 import { benefits, process } from "./Data";
 
-import { TbExternalLink } from 'react-icons/tb'
 import image from "../../Assets/offer.jpg";
 
 const Employers = () => {
@@ -52,9 +51,8 @@ const Employers = () => {
             To get started, you must register as an employer on the{" "}
             <a
               href="https://iaeste.smartsimple.ie/s_Login.jsp"
-              className="flex flex-row items-center gap-1 border-b border-gray-500 w-max"
+              className="items-center gap-1 border-b border-gray-500 w-max"
             >
-              <TbExternalLink />
               IAESTE Exchange Platform.
             </a>{" "}
             After verification, we will send your login details, and guidelines
@@ -99,13 +97,13 @@ const Employers = () => {
           <div className="mt-5 grid grid-cols-1 gap-5 md:mt-10 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-2">
             {process.map((item, i) => (
               <div
-                className="bg-white flex flex-col p-5 rounded gap-5 lg:flex-col xl:flex-row"
+                className="bg-white flex flex-col p-2 rounded gap-5 md:p-5 lg:flex-col xl:flex-row"
                 key={i}
               >
                 <img
                   src={item.image}
                   alt=""
-                  className="h-48 rounded w-full object-cover xl:w-[40%]"
+                  className="h-48 rounded w-full xl:w-[40%]"
                 />
                 <div className="space-y-3 w-full xl:w-[60%]">
                   <h2 className="text-navColor text-2xl font-semibold">
