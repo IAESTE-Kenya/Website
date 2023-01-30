@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Anniversary = () => {
   return (
-    <section className="mx-auto max-w-screen-xl px-2 my-20 lg:my-28 xl:px-0">
+    <section className="mx-auto max-w-4xl px-2 my-20 lg:my-28 xl:px-0 xl:max-w-7xl">
       <div
         className="flex flex-col lg:flex-row lg:space-x-5 xl:space-x-20"
       >

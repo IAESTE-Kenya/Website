@@ -3,7 +3,7 @@ import Courasel, { CouraselItem } from "../Courasel/Courasel";
 import image from "../../Assets/amani.jpeg";
 import kelvin from "../../Assets/kelvin.png";
 import amon from "../../Assets/amon.jpg";
-import image2 from '../../Assets/all.png'
+import image2 from "../../Assets/all.png";
 import { MdLocationOn } from "react-icons/md";
 
 const Stories = () => {
@@ -49,7 +49,7 @@ const Stories = () => {
             <img src={kelvin} alt="" className="h-[65%] w-full object-cover" />
             <div className="bg-white h-full flex flex-row items-center justify-between">
               <h2 className="w-1/3 whitespace-normal text-center text-navColor font-semibold text-sm md:text-xl">
-                Kelvin Kelvin, JKUAT
+                Newton Kelvin
               </h2>
               <p className="w-1/3 text-center whitespace-normal text-navColor font-semibold text-sm md:text-xl">
                 Mechanical Engineering
@@ -66,10 +66,10 @@ const Stories = () => {
             <img src={image2} alt="" className="h-[65%] w-full object-cover" />
             <div className="bg-white h-full flex flex-row items-center justify-between">
               <h2 className="w-1/3 whitespace-normal text-center text-navColor font-semibold text-sm md:text-xl">
-                Kelvin Kelvin, JKUAT
+                Allan Waithira, DeKUT
               </h2>
               <p className="w-1/3 text-center whitespace-normal text-navColor font-semibold text-sm md:text-xl">
-                Mechanical Engineering
+                Mechatronic Engineering
               </p>
               <p className="w-1/3 text-center whitespace-normal text-navColor font-semibold text-sm flex flex-col items-center md:text-lg">
                 <MdLocationOn />

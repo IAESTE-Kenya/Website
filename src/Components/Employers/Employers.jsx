@@ -13,9 +13,9 @@ const Employers = () => {
           <div className="bg-buttonColor md:bg-transparent">
             <Nav />
           </div>
-          <div className="flex flex-row px-2 h-max items-center mx-auto mt-10 max-w-screen-xl md:h-full xl:px-0">
+          <div className="flex flex-row px-2 h-max items-center mx-auto mt-10 max-w-4xl md:h-full xl:px-0 xl:max-w-7xl">
             <div className="lg:w-3/4">
-              <button className="bg-buttonColor w-max py-2 px-10 text-white text-lg font-semibold rounded md:py-3 px-10">
+              <button className="bg-buttonColor w-max py-2 text-white text-lg font-semibold rounded md:py-3 px-10">
                 Employers
               </button>
               <div className="flex flex-col mt-10 md:mt-10 xl:mt-20">
@@ -34,7 +34,7 @@ const Employers = () => {
       </div>
 
       <div className="px-2 lg:px-5 xl:px-0">
-        <div className="mx-auto max-w-screen-xl mt-10">
+        <div className="mx-auto max-w-4xl mt-10 xl:max-w-7xl">
           <h2 className="text-3xl text-navColor font-semibold lg:text-4xl xl:text-5xl">
             Offering an Internship?
           </h2>
@@ -64,7 +64,7 @@ const Employers = () => {
           </p>
         </div>
 
-        <div className="flex flex-col mx-auto max-w-screen-xl px-2 mt-5 lg:mt-10 xl:px-0">
+        <div className="flex flex-col mx-auto max-w-4xl px-2 mt-5 lg:mt-10 xl:px-0 xl:max-w-7xl">
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:flex lg:flex-row">
             <EmployerApp />
           </div>
@@ -76,7 +76,7 @@ const Employers = () => {
           </a>
         </div>
 
-        <div className="mx-auto max-w-screen-xl my-20">
+        <div className="mx-auto max-w-4xl my-20 xl:max-w-7xl">
           <h2 className="text-buttonColor text-3xl font-semibold lg:text-4xl xl:text-5xl">
             Why IAESTE Interns?
           </h2>
@@ -90,7 +90,7 @@ const Employers = () => {
           </ul>
         </div>
 
-        <div className="mx-auto mx-auto max-w-screen-xl my-10 lg:my-20">
+        <div className="mx-auto max-w-4xl my-10 lg:my-20 xl:max-w-7xl">
           <h2 className="text-buttonColor text-3xl font-semibold lg:text-4xl xl:text-5xl">
             You handle the work, we handle everything else
           </h2>

@@ -15,9 +15,9 @@ const Students = () => {
           <div className="bg-buttonColor md:bg-transparent">
             <Nav />
           </div>
-          <div className="flex flex-row px-2 h-max items-center mx-auto mt-10 max-w-screen-xl md:h-full xl:px-0">
+          <div className="flex flex-row px-2 h-max items-center mx-auto mt-10 max-w-4xl md:h-full xl:px-0 xl:max-w-7xl">
             <div className="lg:w-3/4 xl:w-1/2">
-              <button className="bg-buttonColor w-max py-2 px-10 text-white text-lg font-semibold rounded md:py-3 px-10">
+              <button className="bg-buttonColor w-max py-2 text-white text-lg font-semibold rounded md:py-3 px-10">
                 Students
               </button>
               <div className="flex flex-col mt-10 md:mt-10 xl:mt-20">
@@ -32,7 +32,7 @@ const Students = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mt-10 mx-auto max-w-screen-xl px-2 xl:px-0">
+      <div className="flex flex-col mt-10 mx-auto max-w-4xl px-2 xl:px-0 xl:max-w-7xl">
         <h2 className="text-navColor text-4xl font-semibold text-center md:text-5xl lg:text-6xl">
           How it Works
         </h2>
@@ -101,7 +101,7 @@ const Students = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mx-auto max-w-screen-xl px-2 mt-10 lg:mt-16 xl:px-0">
+      <div className="flex flex-col mx-auto max-w-4xl px-2 mt-10 lg:mt-16 xl:px-0 xl:max-w-7xl">
         <h2 className="text-navColor text-center my-5 text-4xl font-semibold md:text-5xl lg:text-6xl">
           How to Apply
         </h2>
@@ -118,7 +118,7 @@ const Students = () => {
 
       <div className="internships mt-16">
         <div className="internship">
-          <div className="py-10 px-2 mx-auto max-w-screen-xl lg:p-16">
+          <div className="py-10 px-2 mx-auto max-w-4xl lg:p-16 xl:max-w-7xl">
             <h2 className="bg-buttonColor py-3 md:py-2 md:px-10 mx-auto rounded text-white font-semibold text-center text-2xl mb-5 md:mb-0 md:text-3xl md:w-max">
               Types of Internships
             </h2>
@@ -161,8 +161,8 @@ const Students = () => {
         </div>
       </div>
 
-      <div className="flex flex-col my-10 mx-auto max-w-screen-xl px-2 md:my-20 md:flex-row xl:px-0">
-        <div className="space-y-5 md:w-[40%] lg:px-1.5 xl:space-y-16">
+      <div className="flex flex-col my-10 mx-auto max-w-4xl px-2 md:my-20 md:flex-row xl:px-0 xl:max-w-7xl">
+        <div className="space-y-5 md:w-1/2 lg:px-1.5 xl:space-y-16">
           <h2 className="text-navColor font-semibold text-4xl md:text-4xl xl:text-6xl">
             Discover the Experiences of Previous Interns
           </h2>

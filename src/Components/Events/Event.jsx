@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { data } from "./Data";
 import { AiFillEyeInvisible } from "react-icons/ai";
+import image from '../../Assets/Events/empty.png'
 
-const Pagitation = ({ setNextPage, setPreviousPage, setPage, data, dataPerPage }) => {
+const Pagitation = ({
+  setNextPage,
+  setPreviousPage,
+  setPage,
+  data,
+  dataPerPage,
+}) => {
   const page = data.length / dataPerPage;
   const pageItems = [];
-  for( let i = 1; i <= page; i++){
-    pageItems.push(i)
+  for (let i = 1; i <= page; i++) {
+    pageItems.push(i);
   }
   return (
     <nav onClick={() => setPreviousPage()}>
@@ -21,7 +28,11 @@ const Pagitation = ({ setNextPage, setPreviousPage, setPage, data, dataPerPage }
           </a>
         </li>
         {pageItems.map((number, i) => (
-          <li className="border border-gray-100" key={i} onClick={() => setPage(number)}>
+          <li
+            className="border border-gray-100"
+            key={i}
+            onClick={() => setPage(number)}
+          >
             <a
               className="py-3 px-4 text-navColor font-semibold bg-white"
               href="#home"
@@ -53,17 +64,17 @@ const Event = () => {
   const currentPosts = data.slice(firstIndex, lastIndex);
 
   const setPreviousPageOnClick = () => {
-    if(currentPage !== 1){
-      setCurrentPage(currentPage - 1)
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
     }
   };
   const setNextPageOnClick = () => {
-    if(currentPage < (data.length / postsPerPage)){
-      setCurrentPage(currentPage + 1)
+    if (currentPage < data.length / postsPerPage) {
+      setCurrentPage(currentPage + 1);
     }
   };
   const setPageOnNumberClick = (number) => {
-    setCurrentPage(number)
+    setCurrentPage(number);
   };
 
   return (
@@ -92,15 +103,22 @@ const Event = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4 w-max mx-auto">
-        <Pagitation
-          setPreviousPage={setPreviousPageOnClick}
-          setNextPage={setNextPageOnClick}
-          data={data}
-          dataPerPage ={postsPerPage}
-          setPage={setPageOnNumberClick}
-        />
-      </div>
+      {data.length !== 0 ? (
+        <div className="mt-4 w-max mx-auto">
+          <Pagitation
+            setPreviousPage={setPreviousPageOnClick}
+            setNextPage={setNextPageOnClick}
+            data={data}
+            dataPerPage={postsPerPage}
+            setPage={setPageOnNumberClick}
+          />
+        </div>
+      ) : (
+        <div className="py-10">
+          <img src={image} alt="" className="h-96 w-max mx-auto object-cover"/>
+          <p className="text-center text-2xl text-navColor">No events to show, please come back later!</p>
+        </div>
+      )}
     </div>
   );
 };

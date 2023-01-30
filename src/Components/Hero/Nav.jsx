@@ -36,7 +36,7 @@ const Nav = () => {
           : ""
       }`}
     >
-      <div className="relative flex flex-row justify-between items-center mx-auto max-w-full md:max-w-screen-xl">
+      <div className="relative flex flex-row justify-between items-center mx-auto max-w-4xl xl:max-w-7xl">
         <Link to="/" className="logo flex flex-row items-center">
           <img src={logo} alt="" className="h-16 w-16" />
           <p className="text-white text-base font-bold md:text-2xl">
@@ -79,12 +79,6 @@ const Nav = () => {
             className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
           >
             Events
-          </Link>
-          <Link
-            to="/employers"
-            className="text-white border-b py-2 pl-2 w-full text-2xl font-bold xl:pl-0 xl:border-0 xl:w-max xl:py-0 xl:text-xl"
-          >
-            Alumni
           </Link>
           <Link
             to="/contact-us"

@@ -9,13 +9,13 @@ const Events = () => {
       <div className="bg-buttonColor xl:bg-navColor">
         <Nav />
       </div>
-          <div className="mx-auto max-w-screen-xl lg:px-0">
+          <div className="mx-auto max-w-4xl lg:px-0 xl:max-w-7xl">
             <img
               src={image}
               alt=""
               className="event-image h-64 w-full object-cover md:h-[500px]"
             />
-            <div className="p-2 xl:p-0">
+            <div className="p-2 mt-5 xl:p-0">
               <p className="text-navColor xl:text-lg">
                 Welcome to the events section of IAESTE Kenya's website. Here,
                 you will find a calendar of all the upcoming events hosted by
@@ -39,7 +39,7 @@ const Events = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto max-w-screen-xl p-2 lg:mt-10 xl:p-0">
+          <div className="mx-auto max-w-4xl p-2 lg:mt-10 xl:p-0 xl:max-w-7xl">
             <Event />
           </div>
     </section>

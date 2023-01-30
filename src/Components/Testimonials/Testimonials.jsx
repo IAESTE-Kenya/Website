@@ -7,7 +7,7 @@ import image3 from "../../Assets/image3.jpg";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials overflow-hidden md:max-w-screen-xl mx-auto my-10">
+    <section className="testimonials overflow-hidden max-w-4xl mx-auto my-10 xl:max-w-7xl">
       <div>
         <div className="w-full md:mx-auto md:w-[90vw] lg:w-[75%]">
           <Courasel display="flex">
