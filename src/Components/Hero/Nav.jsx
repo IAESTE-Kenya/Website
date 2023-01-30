@@ -36,7 +36,7 @@ const Nav = () => {
           : ""
       }`}
     >
-      <div className="relative flex flex-row justify-between items-center mx-auto max-w-4xl xl:max-w-7xl">
+      <div className="relative flex flex-row justify-between items-center mx-auto max-w-full xl:max-w-7xl">
         <Link to="/" className="logo flex flex-row items-center">
           <img src={logo} alt="" className="h-16 w-16" />
           <p className="text-white text-base font-bold md:text-2xl">
