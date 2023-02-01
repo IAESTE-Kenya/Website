@@ -11,7 +11,7 @@ const Map = () => {
         <img
           src={map}
           alt=""
-          className="h-96 w-full object-cover rounded-xl md:h-[500px] lg:md-[500px] xl:h-[600px]"
+          className="h-96 w-full object-cover rounded-xl xl:h-[600px]"
         />
       </a>
     </section>
